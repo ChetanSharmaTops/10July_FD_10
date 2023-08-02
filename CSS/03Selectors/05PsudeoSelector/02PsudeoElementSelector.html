@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psudeo Element Selector</title>
+    <style>
+      h1 {
+        color: khaki;
+        background-color: teal;
+        font-size: 20px;
+      }
+      h1::before {
+        content: "~ ";
+      }
+      h1::after {
+        content: " !";
+      }
+      p::first-letter{
+        color: blueviolet;
+        font-size: 50px;
+      }
+      p::first-line{
+        color: tomato;
+        font-size: 30px;
+      }
+      p::selection{
+        color: aliceblue;
+        background-color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Psudeo Element Selector</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum odio fugit
+      quis architecto alias nobis id a delectus laudantium perspiciatis
+      distinctio corporis, iure sequi. Officia totam harum enim blanditiis
+      accusantium!
+    </p>
+  </body>
+</html>
