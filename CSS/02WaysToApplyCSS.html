@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ways To Apply CSS</title>
 
     <!-- External CSS Is Link Here  -->
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Internal CSS Applied Here -->
     <style>
-        .Internal{
-            background-color: crimson;
-            color: aliceblue;
-            font-size: 30px;
-        }
+      /* syntax */
+      /* selector{
+            property1 : value1;
+            property2 : value2;
+        } */
+      .Internal {
+        background-color: crimson;
+        color: aliceblue;
+        font-size: 30px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Ways To Apply CSS</h1>
     <ul>
-        <!-- With  the Help of Style Attribute -->
-        <li style="background-color: teal; color: khaki; font-size: 30px;">Inline CSS</li>
+      <!-- With  the Help of Style Attribute -->
+      <li style="background-color: teal; color: khaki; font-size: 30px">
+        Inline CSS
+      </li>
 
-        <!-- In Internal CSS with the help of style Tag in head section  -->
-        <li class="Internal">Internal CSS</li>
-        <li class="External">External CSS</li>
+      <!-- In Internal CSS with the help of style Tag in head section  -->
+      <li class="Internal">Internal CSS</li>
+      <li class="External">External CSS</li>
     </ul>
-</body>
+  </body>
 </html>

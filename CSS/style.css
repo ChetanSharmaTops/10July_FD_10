@@ -1,14 +1,20 @@
-.External{
-    background-color: rgb(165, 42, 147);
-    color: aliceblue;
-    font-size: 30px
+/* syntax */
+/* selector{
+            property1 : value1;
+            property2 : value2;
+        } */
+
+.External {
+  background-color: rgb(165, 42, 147);
+  color: aliceblue;
+  font-size: 30px;
 }
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
-p{
-    background-color: rgb(7, 39, 240);
-    color: aliceblue;
-    font-size: 30px
+p {
+  background-color: rgb(7, 39, 240);
+  color: aliceblue;
+  font-size: 30px;
 }
