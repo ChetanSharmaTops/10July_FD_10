@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Padding Box</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        .margin{
+            margin: 100px;   /* All Four Side    */
+            margin: 100px 200px;   /* Top-Bottom = Right-Left    */
+            margin: 100px 200px 300px;   /* Top = Right-Left = Bottom   */
+            margin: 100px 200px 300px 400px;   /* Top = Right = Bottom = Left  */
+            background-color: crimson;
+            color: aliceblue;
+
+        }
+        .padding{
+            padding: 100px;   /* All Four Side    */
+            padding: 100px 200px;   /* Top-Bottom = Right-Left    */
+            padding: 100px 200px 300px;   /* Top = Right-Left = Bottom   */
+            padding: 100px 200px 300px 400px;   /* Top = Right = Bottom = Left  */
+            background-color: crimson;
+            color: aliceblue;
+        }
+        
+        div[class*="box"]{
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            background-color: teal;
+            color: khaki;
+            margin: 0 auto;
+        }
+        .Border-box{
+            box-sizing: border-box;
+            /* Width = 100px - padding = 20px * 2 - border = 5px * 2 => 50px */
+            /* Height = 100px - padding = 20px * 2 - border = 5px * 2 => 50px */
+        }
+        .Content-box{
+            box-sizing: content-box;
+            /* Width = 100px + padding = 20px * 2 + border = 5px * 2 => 150px */
+            /* Height = 100px + padding = 20px * 2 + border = 5px * 2 => 150px */
+            
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <hr>
+    <div class="margin">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis,
+      impedit eveniet voluptate laborum accusantium aliquam soluta placeat vitae
+      repellat deserunt asperiores nesciunt dolores quo similique provident in
+      ad sed.
+    </div>
+    <hr />
+    <div class="padding">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ut
+      animi ea incidunt adipisci officia? Sequi maiores hic, saepe ab qui
+      numquam, repudiandae quae aliquid omnis vero molestiae perferendis odio.
+    </div>
+    <hr>
+    <div class="Border-box">Border-box</div>
+    <hr>
+    <div class="Content-box">Content-box</div>
+  </body>
+</html>
