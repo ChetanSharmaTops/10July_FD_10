@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border In CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            background-color: teal;
+            color: khaki;
+            text-align: center;
+            border: 10px solid blueviolet;
+        }
+        .box{
+            background: url(../../Images/banner.jpg)no-repeat center center/cover;
+            width: 400px;
+            height: 400px;
+            background-clip: padding-box;
+            margin: 30px auto;
+            border: 10px solid brown;
+            border: 10px double brown;
+            border: 10px dashed brown;
+            border: 10px dotted brown;
+            border: 10px ridge brown;
+            border: 10px inset brown;
+            border: 10px groove brown ;
+            border: 10px outset rgb(140, 9, 240) ;
+            border-radius: 50px;
+            border-radius: 50%;
+            outline: 10px solid rgb(255, 0, 230);
+
+        }
+        .box-img{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            border: 50px solid;
+            border-image: url(../../Images/banner.jpg) 10;
+            outline: 10px solid orangered;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border In CSS</h1>
+    <div class="box"></div>
+    <hr>
+    <div class="box-img">
+        
+    </div>
+
+</body>
+</html>
