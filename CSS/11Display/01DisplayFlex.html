@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display FLex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        border: 5px solid rgb(255, 0, 0);
+
+      }
+      img {
+        width: 100%;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        border: 5px solid rgb(255, 191, 0);
+      }
+      .col-50 {
+        width: 50%;
+        border: 5px solid rgb(217, 0, 255);
+
+      }
+      .col-33 {
+        width: 33.33%;
+        border: 5px solid rgb(217, 0, 255);
+
+      }
+      .col-25 {
+        width: 25%;
+        border: 5px solid rgb(217, 0, 255);
+
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+
+            <!-- col-50  -->
+
+            <div class="col-50"><img src="../../Images/banner.jpg" alt="" /></div>
+          <div class="col-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab
+            praesentium sequi dignissimos veritatis quae incidunt dolorum,
+            laborum ipsum, dolore quo corrupti. Modi officia cumque
+            reprehenderit provident numquam laborum voluptatibus?
+          </div>
+        </div>
+
+        <!-- col-33  -->
+
+
+        <div class="row">
+            <div class="col-33">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab
+              praesentium sequi dignissimos veritatis quae incidunt dolorum,
+              laborum ipsum, dolore quo corrupti. Modi officia cumque
+              reprehenderit provident numquam laborum voluptatibus?
+            </div>
+            <div class="col-33"><img src="../../Images/banner.jpg" alt="" /></div>
+            <div class="col-33">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab
+              praesentium sequi dignissimos veritatis quae incidunt dolorum,
+              laborum ipsum, dolore quo corrupti. Modi officia cumque
+              reprehenderit provident numquam laborum voluptatibus?
+            </div>
+          </div>
+
+
+          <!-- col-25  -->
+
+
+          <div class="row">
+            <div class="col-25">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab
+              praesentium sequi dignissimos veritatis quae incidunt dolorum,
+              laborum ipsum, dolore quo corrupti. Modi officia cumque
+              reprehenderit provident numquam laborum voluptatibus?
+            </div>
+            <div class="col-25"><img src="../../Images/banner.jpg" alt="" /></div>
+            <div class="col-25">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab
+              praesentium sequi dignissimos veritatis quae incidunt dolorum,
+              laborum ipsum, dolore quo corrupti. Modi officia cumque
+              reprehenderit provident numquam laborum voluptatibus?
+            </div>
+            <div class="col-25"><img src="../../Images/banner.jpg" alt="" /></div>
+          </div>
+      </div>
+    </section>
+  </body>
+</html>
