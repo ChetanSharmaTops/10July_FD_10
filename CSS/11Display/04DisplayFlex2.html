@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+      body {
+        border: 5px dashed rgb(1, 199, 123);
+      }
+      #section {
+        border: 5px dashed rgb(90, 0, 128);
+      }
+      .section-wrapper {
+        border: 5px dashed rgb(128, 0, 64);
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        border: 5px dashed green;
+      }
+      .row {
+        border: 5px dashed rgb(251, 5, 5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      .col-33 {
+        border: 5px dashed rgb(222, 251, 5);
+        width: 33.33%;
+      }
+      p{
+        border: 5px dotted darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    body start
+    <section id="section">
+      section start
+      <div class="section-wrapper">
+        section-wrapper start
+        <div class="container">
+          container
+          <div class="row">
+            <!-- row -->
+            <div class="col-33">
+              col-33 1
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="col-33">
+              col-33 2
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolorum, vitae!
+              </p>
+            </div>
+            <div class="col-33">
+              col-33 3
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                ad ipsa dolorum. Perspiciatis sit praesentium corrupti debitis
+                quibusdam officiis corporis, eum harum cupiditate nostrum eius
+                consectetur non modi itaque fugit.
+              </p>
+            </div>
+          </div>
+        </div>
+        section-wrapper end
+      </div>
+      section end
+    </section>
+    body end
+  </body>
+</html>
