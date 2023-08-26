@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position In CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid ; */
+            
+        }
+        body{
+            background-color: tan;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            background-color: crimson;
+            color: aliceblue;
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            padding: 50px 0px 100px;
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+            padding: 10px;
+        }
+        .col-50{
+            width: 50%;
+            position: relative;
+        }
+        img[class*="offer"]{
+            position: absolute;
+            width: 100px;
+        }
+        .offer-1{
+            top: 0;
+            right:  150px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Ravi</h1>
+        <p>Enjoy Your Show</p>
+        <div class="row">
+            <div class="col-50">
+                <img src="../../Images/offer.jfif" class="offer-1" alt="">
+                <img src="../../Images/QuickStyle.avif" alt="">
+            </div>
+            <div class="col-50">
+                <img src="../../Images/offer.jfif" class="offer-2" alt="">
+                <img src="../../Images/QuickStyle.avif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
