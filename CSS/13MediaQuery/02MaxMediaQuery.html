@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Media Query</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+      }
+      h1::after {
+        content: " Original";
+      }
+      body {
+        background-color: crimson;
+        color: aliceblue;
+      }
+
+      /* Media Query max  */
+
+
+      @media (max-width: 1400px) {
+        body{
+            background-color: rgb(225, 5, 196);
+        }
+        h1::after{
+            content: " 1400px";
+        }
+      }
+
+
+      @media (max-width: 1200px) {
+        body{
+            background-color: rgb(55, 0, 128);
+        }
+        h1::after{
+            content: " 1200px";
+        }
+      }
+
+
+
+      @media (max-width: 992px) {
+        body{
+            background-color: rgb(118, 0, 55);
+        }
+        h1::after{
+            content: " 992px";
+        }
+      }
+
+
+
+      @media (max-width: 768px) {
+        body{
+            background-color: rgb(91, 188, 0);
+        }
+        h1::after{
+            content: " 768px";
+        }
+      }
+
+
+      @media (max-width: 576px) {
+        body{
+            background-color: teal;
+        }
+        h1::after{
+            content: " 576px";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+  </body>
+</html>
