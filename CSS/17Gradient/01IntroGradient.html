@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient In CSS</title>
+    <style>
+        body{
+            background: linear-gradient(0.25turn, rgb(103, 103, 169), yellow, brown);
+            /* background: radial-gradient(rgb(103, 103, 169), yellow, brown); */
+            /* background: conic-gradient(rgb(103, 103, 169), yellow); */
+        }
+      .linear-gradient {
+        height: 100px;
+        /* background: linear-gradient(0.45turn, red, yellow, green, blue); */
+        /* background: linear-gradient(110deg, red, yellow, green, blue); */
+        background: linear-gradient(0.25turn, red, yellow, green, blue);
+      }
+      .radial-gradient {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+        color: brown;
+        /* background: radial-gradient( teal, crimson, blue); */
+        background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+        background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+      }
+      .conic-gradient {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: conic-gradient(blue, yellow, brown, teal, pink, orange);
+        /* background: conic-gradient(from 0.25turn, blue, red);; */
+      }
+      button{
+        padding: 10px 30px;
+        background-color: teal;
+        color: khaki;
+
+      }
+      button:hover{
+        padding: 10px 30px;
+        background: linear-gradient(crimson, blue);
+        color: khaki;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="linear-gradient">linear-gradient</div>
+    <hr />
+    <div class="radial-gradient">radial-gradient</div>
+    <hr />
+    <div class="conic-gradient">conic-gradient</div>
+    <hr>
+    <button>Hover ME</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>

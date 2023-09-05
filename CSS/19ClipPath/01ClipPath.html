@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .box{
+            background: url(../../Images/banner.jpg)no-repeat center center/cover;
+            height: 100vh;
+            /* clip-path: polygon(3% 0, 0% 100%, 100% 100%); */
+            clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
