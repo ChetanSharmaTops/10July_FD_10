@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform in CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        margin: 150px auto;
+        text-align: center;
+        font-size: 50px;
+        border: 5px solid crimson;
+        /* transform: matrix(1, 2, 3, 4, 1, 1); */
+        /* transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); */
+        transform: rotate(0.25turn);
+        /* transform: rotate3d(2, 5, 5, 90deg); */
+        /* transform: rotateX(70deg); */
+        /* transform: rotateY(50deg); */
+        /* transform: rotateZ(40deg); */
+        /* transform: translate(12px, 50%); */
+        /* transform: translate3d(12px, 50%, 3em); */
+        /* transform: translateX(50px); */
+        /* transform: translateY(70px); */
+        /* transform: translateZ(50px); */
+        /* transform: scale(1, 2); */
+        /* transform: scale3d(1, 1, 0.5); */
+        /* transform: scaleX(2); */
+        /* transform: scaleY(0.5); */
+        /* transform: scaleZ(0.3); */
+        /* transform: skew(30deg, 20deg); */
+        /* transform: skewX(30deg); */
+        /* transform: skewY(1.07rad); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Ravi</div>
+  </body>
+</html>

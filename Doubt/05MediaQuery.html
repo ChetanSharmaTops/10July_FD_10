@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid violet; */
+        }
+        nav{
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 30px;
+            position: relative;
+        }
+        nav, .nav-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        li{
+            list-style-type: none;
+            padding: 0px 30px;
+        }
+        input{
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            /* visibility: hidden; */
+            opacity: 0;
+            width: 20px;
+        }
+       
+
+        /* Media Query Start From Here  */
+
+
+        @media (max-width: 576px){
+            .nav-menu{
+                display: none;
+            }
+            input{
+                /* display: block; */
+                opacity: 1;
+            }
+            input:checked + ul{
+                display: flex;
+                
+            }
+            li{
+                
+                font-size: 20px;
+                padding: 10px 10px;
+            }
+            nav{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="row">
+        <div class="logo">
+            Logo
+        </div>
+            <input type="checkbox">
+        <ul class="nav-menu">
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+        </ul>
+    </nav>
+</body>
+</html>
