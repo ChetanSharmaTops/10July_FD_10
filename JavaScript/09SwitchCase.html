@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Case In JS</title>
+  </head>
+  <body>
+    <h1>Switch Case In JS</h1>
+    <button onclick="handleEvent()">Click Me</button>
+    <div id="result"></div>
+    <script>
+      function handleEvent() {
+        // document.getElementById("result").innerText = "Hello Buddy"
+        document.getElementById("result").innerHTML = "<h2>Hello Buddy</h2>";
+      }
+
+      // Syntax of Switch case
+
+      // switch (key) {
+      //     case value:
+
+      //         break;
+
+      //     default:
+      //         break;
+      // }
+
+      //   let a = 2 + 2;
+
+      //   switch (a) {
+      //     case 3:
+      //       alert("Too small");
+      //       break;
+      //     case 4:
+      //       alert("Exactly!");
+      //       break;
+      //     case 5:
+      //       alert("Too big");
+      //       break;
+      //     default:
+      //       alert("I don't know such values");
+      //   }
+
+      let age = 22;
+
+
+      if (age < 18) {
+        alert("No drive");
+      }
+      else if (age > 18) {
+        alert("Yes drive");
+      }
+
+      else if (age == 18) {
+        alert(" Sorry");
+      }
+    </script>
+  </body>
+</html>
