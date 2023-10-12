@@ -6,33 +6,50 @@
     <title>Normal Form Validation </title>
 </head>
 <body>
-    <input type="text" name="first" id="first" onblur="handleValidation()"> <span id="error1"></span><br><br>
-    <input type="text" name="second" id="second"> <span id="error2"></span><br><br>
-    <input type="text" name="third" id="third"> <span id="error3"></span><br><br>
-    <input type="text" name="fourth" id="fourth"> <span id="error4"></span> <br> <br>
+    <input type="text" name="first" id="first" onblur="handleValidation(this, 'error1', 'Name')"> <span id="error1"></span><br><br>
+    <input type="password" name="second" id="second" onblur="handleValidation(this, 'error2', 'Password')"> <span id="error2"></span><br><br>
+    <input type="email" name="third" id="third" onblur="handleValidation(this, 'error3', 'Email')"> <span id="error3"></span><br><br>
+    <input type="tel" name="fourth" id="fourth" onblur="handleValidation(this, 'error4', 'Mobile')"> <span id="error4"></span> <br> <br>
 
 
     <script>
-        var b = 2;
-        function handleValidation(){
-            var a = document.getElementById("first").value
-            console.log(a);
-            if (a == "") {
-                document.getElementById("error1").innerText = "This field is required!"
-                // document.getElementById("error1").innerHTML = "<h2>This field is required!</h2>"
-                // document.getElementById("error1").innerText = "<h2>This field is required!</h2>"
-                console.log("Empty");
-            } else {
-                document.getElementById("error1").innerText = ""
-                console.log("has some value");
+        // var b = 2;
+        // function handleValidation(){
+        //     var a = document.getElementById("first").value
+        //     console.log(a);
+        //     if (a == "") {
+        //         document.getElementById("error1").innerText = "This field is required!"
+        //         // document.getElementById("error1").innerHTML = "<h2>This field is required!</h2>"
+        //         // document.getElementById("error1").innerText = "<h2>This field is required!</h2>"
+        //         console.log("Empty");
+        //     } else {
+        //         document.getElementById("error1").innerText = ""
+        //         console.log("has some value");
 
                 
-            }
-            // console.log("call me");
-        }
+        //     }
+        //     // console.log("call me");
+        // }
     //    var b = new handleValidation()
     //    handleValidation()
     //    console.log(b);
+
+
+
+
+
+    function handleValidation(jyoti, ravi, sachin) {
+        // console.log(jyoti);
+        if (jyoti.value == "") {
+            document.getElementById(ravi).innerText = "This field is required" + ' ' +  sachin
+            document.getElementById(ravi).style.color = "red"
+        }
+        else{
+            document.getElementById(ravi).innerText = ""
+        }
+
+    }
+    // handleValidation()
     </script>
 </body>
 </html>

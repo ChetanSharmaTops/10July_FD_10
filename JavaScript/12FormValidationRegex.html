@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Form Validation With The Help of RegEx</h1>
+    <form action="">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" onblur="handleEmailValidation(this, 'error1')">
+        <span id="error1"></span>
+        <br><br>
+        <label for="mobile">Mobile</label>
+        <input type="tel" name="mobile" id="mobile" onblur="handleMobileValidation(this, 'error2')">
+        <span id="error2"></span>
+        <br><br>
+        <button>submit</button>
+    </form>
+
+
+    <script>
+        function handleEmailValidation(a, spnid) {
+            var email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            console.log(a);
+            console.log(a.value);
+            if(email.test(a.value)){
+                document.getElementById(spnid).innerText = ""
+
+            }
+            else{
+                document.getElementById(spnid).innerText = "Enter valid Email"
+                document.getElementById(spnid).style.color = "red"
+
+            }
+        }
+
+        function handleMobileValidation(ravi, spnid){
+            var mobile = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+            if (mobile.test(ravi.value)) {
+                document.getElementById(spnid).innerText = ""
+            }
+            else{
+                document.getElementById(spnid).innerText = "Enter valid Mobile"
+                document.getElementById(spnid).style.color = "red"
+
+            }
+        
+        }
+    </script>
+</body>
+</html>
