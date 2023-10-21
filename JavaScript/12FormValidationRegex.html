@@ -8,12 +8,20 @@
 <body>
     <h1>Form Validation With The Help of RegEx</h1>
     <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" onblur="handleNameValidation(this, 'error1')">
+        <span id="error1"></span>
+        <br><br>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" onblur="handlePasswordValidation(this, 'error2')">
+        <span id="error1"></span>
+        <br><br>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" onblur="handleEmailValidation(this, 'error1')">
+        <input type="email" name="email" id="email" onblur="handleEmailValidation(this, 'error3')">
         <span id="error1"></span>
         <br><br>
         <label for="mobile">Mobile</label>
-        <input type="tel" name="mobile" id="mobile" onblur="handleMobileValidation(this, 'error2')">
+        <input type="tel" name="mobile" id="mobile" onblur="handleMobileValidation(this, 'error4')">
         <span id="error2"></span>
         <br><br>
         <button>submit</button>
@@ -21,6 +29,34 @@
 
 
     <script>
+
+function handleNameValidation(e,spnid)
+    {
+        var name = /^[a-zA-Z]+$/
+        if(name.test(e.value))
+        {
+            document.getElementById(spnid).innerText = "";
+        }
+        else{
+            
+            document.getElementById(spnid).style.color="red";
+            document.getElementById(spnid).innerText = "Please Enter only Characters!"
+        }
+    }
+    function handlePasswordValidation(e,spnid)
+    {
+        var pwd = /^[a-zA-z0-9._-]{3,5}$/
+        if(pwd.test(e.value))
+        {
+            document.getElementById(spnid).innerText = "";
+        }
+        else{
+            
+            document.getElementById(spnid).style.color="red";
+            document.getElementById(spnid).innerText = "Please Enter min 3 and max 5 characters!"
+        }
+    }
+
         function handleEmailValidation(a, spnid) {
             var email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
             console.log(a);
@@ -48,6 +84,7 @@
             }
         
         }
+
     </script>
 </body>
 </html>
