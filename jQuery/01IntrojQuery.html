@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction To JQuery</title>
+  </head>
+  <body>
+    <h2>Introduction To JQuery</h2>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+      recusandae?
+    </p>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+      recusandae?
+    </p>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+      recusandae?
+    </p>
+
+    <!-- jquery added here  -->
+    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      console.log($);
+      console.log(jQuery);
+
+      $(document).ready(function () {
+        //   $(function () {
+        console.log("document is ready");
+
+        $("h2").click(function () {
+          // $("body").css('backgroundColor' , 'cyan')
+          $(".para").css("color", "green");
+          $("#para").css("color", "teal");
+          // $("h2").css({'fontSize' : '50px', 'color' : 'teal'})
+          // $("h2").css({fontSize : '50px', color : 'teal'})
+          $("h2").css({ "font-size": "50px", color: "teal" });
+          // $(selector). css({ propertyName1 : value1, propertyName2 : value2, ... propertyNameN : valueN, });
+          // $("h2").hide(2000)
+          console.log("Clicked on H2");
+        });
+      });
+    </script>
+  </body>
+</html>
