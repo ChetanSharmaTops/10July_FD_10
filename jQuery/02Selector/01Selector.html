@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in jQuery</title>
+</head>
+<body>
+    <h1>Selector in jQuery</h1>
+    <p class="box">Lorem ipsum dolor sit amet.</p>
+    <p id="unique">Lorem ipsum dolor sit amet.</p>
+    <button>Click Me</button>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("h1").css("color", "green");
+        //   Element Selector 
+          $("#unique").css("color", "red");
+        //   id Selector 
+          $(".box").css("color", "blue");
+        //   class Selector 
+
+        })
+      });
+    </script>
+</body>
+</html>

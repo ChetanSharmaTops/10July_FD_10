@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Effect in jQuery</title>
+    <style>
+     
+      .box-1 {
+        width: 500px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: teal;
+        color: khaki;
+      }
+      .box-2 {
+        width: 500px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: teal;
+        color: khaki;
+        display: none;
+      }
+      .box-3 {
+        width: 500px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: crimson;
+        color: aliceblue;
+        display: none;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h2 class="up">Hello See this Slide Up</h2>
+    <div class="box-1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit unde
+            sint, pariatur eveniet perspiciatis.
+        </p>
+    </div>
+    <hr>
+    <h2 class="down">Hello See this Slide Down</h2>
+    <div class="box-2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit unde
+            sint, pariatur eveniet perspiciatis.
+        </p>
+    </div>
+    <hr>
+    <h2 class="toggle">Hello See this Slide Down</h2>
+    <div class="box-3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit unde
+            sint, pariatur eveniet perspiciatis.
+        </p>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".up").click(function () {
+          $(".box-1").slideUp(2000);
+        });
+        $(".down").click(function () {
+          $(".box-2").slideDown(2000);
+        });
+        $(".toggle").click(function () {
+          $(".box-3").slideToggle(2000);
+        });
+      });
+    </script>
+  </body>
+</html>

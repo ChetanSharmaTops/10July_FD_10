@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect in jQuery</title>
+    <style>
+        .para{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Effect in jQuery</h1>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p id="unique">Lorem ipsum dolor sit amet.</p>
+    <button class="Hide">Hide</button>
+    <button class="Show">Show</button>
+    <button class="Toggle">Toggle</button>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".Hide").click(function () {
+          $("h1").hide(2000);
+        })
+        $(".Show").click(function () {
+          $(".para").show(2000);
+        })
+        $(".Toggle").click(function () {
+          $("#unique").toggle(2000);
+        })
+      });
+    </script>
+</body>
+</html>

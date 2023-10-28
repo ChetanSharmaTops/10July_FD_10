@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect in jQuery</title>
+    <style>
+        h1{
+            display: none;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Effect in jQuery</h1>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p id="unique">Lorem ipsum dolor sit amet.</p>
+    <div class="box"></div>
+    <button class="Hide">fadeIn</button>
+    <button class="Show">fadeOut</button>
+    <button class="Toggle">fadeToggle</button>
+    <button class="To">fadeTo</button>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".Hide").click(function () {
+          $("h1").fadeIn(2000);
+        })
+        $(".Show").click(function () {
+          $(".para").fadeOut(2000);
+        })
+        $(".Toggle").click(function () {
+          $("#unique").fadeToggle(2000);
+        })
+        $(".To").click(function () {
+          $(".box").fadeTo(2000, 0.5);
+        })
+      });
+    </script>
+</body>
+</html>

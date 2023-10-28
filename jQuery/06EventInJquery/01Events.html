@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Events</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            height: 100px;
+            border: 3px solid brown;
+
+        }
+       
+    </style>
+  </head>
+  <body>
+    <section id="section-1">Hello Section One</section>
+    <section id="section-2">Hello Section Two</section>
+    <section id="section-3">Hello Section Three</section>
+    <section id="section-4">Hello Section Four</section>
+    <section id="section-5">Hello Section Five</section>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $("#section-1").on("keydown", function () {
+        $("#section-1").mouseenter(function () {
+          $("#section-2").css('background-color', 'blue');
+          console.log("keydown");
+        });
+      });
+    </script>
+  </body>
+</html>
