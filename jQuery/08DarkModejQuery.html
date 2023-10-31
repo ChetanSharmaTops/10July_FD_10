@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode jQuery</title>
+  </head>
+  <body>
+    <h1>Dark Mode jQuery</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus
+      id possimus reprehenderit dolore, laborum quae, iusto, minima assumenda
+      quod harum repudiandae nisi soluta aliquam nam eligendi nesciunt. Maxime,
+      numquam!
+    </p>
+    <button class="dark">Dark Mode</button>
+    <button class="light">light Mode</button>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        $(".dark").click(function () {
+         $('body').css({backgroundColor: 'black', color: 'grey'})
+        });
+        $(".light").click(function () {
+         $('body').css({backgroundColor: 'grey', color: 'black'})
+        });
+      });
+    </script>
+  </body>
+</html>

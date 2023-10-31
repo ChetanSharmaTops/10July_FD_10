@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADD Class</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 3px dashed green;
+        background-color: thistle;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <button id="add">Add</button>
+    <button id="remove">Remove</button>
+    <button id="toggle">Toggle</button>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#add").click(function () {
+          $("div").addClass("box");
+        });
+        $("#remove").click(function () {
+          $("div").removeClass("box");
+        });
+        $("#toggle").click(function () {
+          $("div").toggleClass("box");
+        });
+      });
+    </script>
+  </body>
+</html>
