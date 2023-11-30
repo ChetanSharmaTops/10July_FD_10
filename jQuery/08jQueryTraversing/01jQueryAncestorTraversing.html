@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Traversing</title>
+    <style>
+      * {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="great-grand-parent">
+        great-grand-parent
+      <div class="grand-parent">
+        grand-parent
+        <ul class="parent">
+            parent
+          <li class="child-one">Child One</li>
+          <li class="child-two">Child Two</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script>
+//   $( ".child-two" ).parent().css( "border", "2px solid red" );
+  $( ".child-two" ).parents().css( "border", "2px solid blue" );
+//   $( ".child-two" ).parentsUntil(".great-grand-parent").css( "border", "2px solid teal" );
+  // $( ".child-two" ).parentsUntil(".grand-parent").css( "border", "2px solid teal" );
+</script>
