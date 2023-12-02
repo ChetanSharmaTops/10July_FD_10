@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String In Method</title>
+</head>
+<body>
+    <h1>String In Method</h1>
+    <p>The String object is used to represent and manipulate a sequence of characters.</p>
+
+
+    <script>
+
+        let a = "Namaste Bharat"
+        let b = "        Namaste Bharat        "
+        let name = "Ravi Gupta"
+        let age = 24;
+        console.log(a.length);
+        console.log(a.toUpperCase());
+        console.log(a.toLowerCase());
+        console.log(b.trim());
+        console.log(a.charAt(4));
+        console.log(a.charCodeAt(4));    // Returns a number that is the UTF-16 code unit value at the given index.
+        console.log(a.concat(" Mata"));  // Combines the text of two (or more) strings and returns a new string.
+        console.log(a.indexOf("a"));   // Returns the index within the calling String object of the first occurrence of searchValue, or -1 if not found.
+        console.log(a.lastIndexOf("a"));   //Returns the index within the calling String object of the last occurrence of searchValue, or -1 if not found.
+        console.log(name.replace("Gupta", "Suthar"));
+        console.log(age.toString());
+        console.log(typeof age.toString());
+    </script>
+</body>
+</html>
