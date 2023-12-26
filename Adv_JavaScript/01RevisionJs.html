@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revision of Basic JS</title>
+  </head>
+  <body>
+    <h1>Revision of Basic JS</h1>
+
+    <script>
+      // Varibales In JS
+
+      // var = before ES6  // Scope global
+      // let = block scope
+      // const = block scope
+
+      // let a; // Declaration of a
+      // let b = 10; // Declaration and initialization
+      // c = 15;  // Assignemnet to c
+
+      //   Scope in JS
+
+      // What is block in JavaScript?
+
+      {
+        // Whatever comes in curly brackets are block scope
+      }
+
+      //   var a = 10;
+      //   //   let a = 10;
+      //   //   const a = 10;
+
+      //   {
+      //     var a = 50;
+      //     // let a = 50;
+      //     // const a = 50;
+      //     console.log(a);
+      //   }
+      //   console.log(a);
+
+      // Rules of naming convention to any varibales
+
+      //   always start with _, $, alpha
+
+      // let 55a = 10 // kabhi asa nhi krte
+      // console.log(55a);
+
+      // Data Types in JS
+
+      //   1. Primitive Data Type
+
+      // Number, null, string, symbol, BigInt, Boolean,  undefined
+
+      //   a = 10;
+      //   b = null;
+      //   c = "hello";
+      //   d = Symbol("hello");
+      //   e = 545454545454n;
+      //   f = true;
+      //  var g;
+
+      //   console.log(a,b,c,d,e,f,g);
+      //   console.log(typeof a,typeof b,typeof c,typeof d,typeof e,typeof f,typeof g);
+
+      //   2. Non-Primitive Data Type
+
+      // Array, Object
+
+      //   let marks = [50,30,80,60,40,]
+      //   console.log(marks);
+      //   console.log(typeof marks);
+      //   console.log(marks[3]);
+      //   console.log(marks[8]);
+      //   console.log(marks.length);
+      //   console.log(marks.push(true));  // push value at the end
+      //   console.log(marks);
+      //   console.log(marks.pop());
+      //   console.log(marks.pop());
+      //   console.log(marks);
+      //   console.log(marks.shift());
+      //   console.log(marks);
+      //   console.log(marks.unshift('Chetan'));
+      //   console.log(marks[2] = 'hello');
+      //   console.log(marks);
+      //   console.log(marks.reverse());
+      //   console.log(marks.sort());
+      //   console.log(marks.toString());
+      //   console.log(marks.toLocaleString());
+      //   console.log(typeof marks.toLocaleString());
+
+      //   marks.forEach(element => {
+      //     console.log(element);
+      //   });
+
+      //   let obj = {
+      //     name: 'Ravi',
+      //     isHandSome: true,
+      //     cousre: 'FrontEnd'
+      //   }
+      //   console.log(obj);
+      //   console.log(typeof obj);
+      //   console.log(obj.name);
+      //   console.log(obj.contact = 654614514);
+      //   console.log(obj);
+      //   console.log(obj.contact.toString());
+
+      //   let obj = [
+      //     {
+      //       name: "Ravi",
+      //       contact: 15454554,
+      //       cousre: "FrontEnd",
+      //     },
+      //     {
+      //       name: "Sachin",
+      //       contact: 15454554,
+      //       cousre: "FrontEnd",
+      //     },
+      //     {
+      //       name: "Jignasha",
+      //       contact: 15454554,
+      //       cousre: "FrontEnd",
+      //     },
+      //     {
+      //       name: "khyati",
+      //       contact: 154545545,
+      //       cousre: "FrontEnd",
+      //     },
+      //   ];
+
+      //   console.log(obj);
+      // //   console.log(obj[2].name);
+
+      // Condtional Statement
+
+    //   let a = 2;
+
+    //   if (a >=18 ) {
+    //       alert('isAllowedDriving')
+    //   }
+    //   else{
+    //       alert('notAllowedDriving')
+
+    //   }
+
+      const age = 2;
+      const Driving = age >= 18 ? "isAllowedDriving" : "notAllowedDriving";
+      console.log(Driving); 
+      alert(Driving); 
+
+      //  Loop
+
+      // for (let index = 0; index < 10; index++) {
+      //     console.log(index);
+      // }
+    </script>
+  </body>
+</html>
+
+<!-- https://stackoverflow.com/questions/801032/why-is-null-an-object-and-whats-the-difference-between-null-and-undefined -->

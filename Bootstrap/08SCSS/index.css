@@ -1,0 +1,25 @@
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  background-color: #20c997;
+  color: #d63384;
+  font-size: 5rem;
+}
+
+.parent {
+  font-size: 30px;
+}
+.parent p {
+  background-color: crimson;
+  color: aliceblue;
+}
+.parent .para-green {
+  background-color: green;
+  color: aliceblue;
+}
+.parent .para-blue {
+  background-color: blue;
+  color: aliceblue;
+}/*# sourceMappingURL=index.css.map */

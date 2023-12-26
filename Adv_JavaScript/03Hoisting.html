@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoisting In JS</title>
+  </head>
+  <body>
+    <h1>Hoisting In JS</h1>
+
+    <script>
+      
+
+      // Variables declared with let or const are hoisted WITHOUT a default initialization.
+      //  So accessing them before the line they were declared throws ReferenceError:
+      //   Cannot access 'variable' before initialization.
+      // But variables declared with var are hoisted WITH a default initialization of undefined.
+
+    //   a = 10;
+    //   console.log(a);
+    //   var a;
+
+    //   b = 10;
+    //   console.log(b);  // Cannot access 'b' before initialization
+    //   let b;
+
+    //   c = 10;
+    //   console.log(c);  //  Missing initializer in const declaration
+    //   const c;
+    </script>
+  </body>
+</html>
