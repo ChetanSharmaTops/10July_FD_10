@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function In JS</title>
+  </head>
+  <body>
+    <h1>Function In JS</h1>
+
+    <script>
+      //   Function In JS
+
+      // Functions are the main “building blocks” of the program.
+      // They allow the code to be called many times without repetition.
+
+      // Function Declaration
+
+      // function greet() {
+      //   console.log("Namaste Bharat");
+      // }
+      // greet()
+      // greet()
+      // greet()
+      // greet()
+
+      // Function with Parameters
+
+      // Parameters => while declaring a function we pass some parameters in praenthesis like this (para1, para2, ....)
+
+      // function greet(para1, para2) {
+      //   console.log(para1 + para2);
+      //   console.log(para1 - para2);
+      //   console.log(para1 * para2);
+      //   console.log(para1 / para2);
+      //   // console.log(para2);
+      // }
+      // greet(4, 5);
+      // greet(5, 2);
+      // greet(3, 9);
+      // greet(8, 6);
+
+      // Arguments  => while calling a function we give some Arguments in praenthesis like this (arg1, arg2, ....)
+
+      //   Local variables
+
+      // A variable declared inside a function is only visible inside that function.
+
+      // function inside() {
+      //     let a = 10;
+      //     console.log(a);
+      // }
+      // inside()
+      // console.log(a);
+
+      // Outer variables
+
+      // A function can access an outer variable as well, for example:
+
+      // let a = 10;
+      // function inside() {
+      //     console.log(a);
+      // }
+      // inside()
+      // console.log(a);
+
+      // Default values
+
+      // If a function is called, but an argument is not provided, then the corresponding value becomes undefined.
+
+    //   function subTwoNumber(a, b = 10) {
+    //     return a - b;
+    //   }
+
+    //   console.log(subTwoNumber(4));
+
+    //   function subTwoNumber(a, b) {
+    //     if (b === undefined) {
+    //       b = 10;
+    //     }
+
+    //     return b-a;
+    //   }
+    //   console.log(subTwoNumber(4));
+    //   console.log(subTwoNumber(4,2));
+    //   console.log(subTwoNumber(4,15));
+
+
+
+    // Returning a value
+
+    // A function can return a value back into the calling code as the result.
+
+
+
+    // function addTwoNumber(a,b) {
+    //     console.log('before return called');
+    //     return a+b;
+    //     console.log('after return called');
+    //   }
+    //   console.log(addTwoNumber(4,5));
+    </script>
+  </body>
+</html>
