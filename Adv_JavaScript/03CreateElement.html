@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    <h1 id="heading">Dynamically Create Element With The Help.</h1>
+
+    <button onclick="handleAddElement()">Click To Add Element</button>
+
+    <script>
+        function handleAddElement() {
+            let node = document.createElement("p");
+            let textnode = document.createTextNode("This is a Paragraph");
+            node.appendChild(textnode);
+            document.getElementById("heading").appendChild(node);
+        }
+    </script>
+</body>
+</html>
