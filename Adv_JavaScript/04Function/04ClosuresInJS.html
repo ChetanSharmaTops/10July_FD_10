@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure in Javascript</title>
+  </head>
+  <body>
+    <h1>Closure in Javascript</h1>
+    <p>
+      A closure is the combination of a function bundled together (enclosed)
+      with references to its surrounding state (the lexical environment).
+    </p>
+    <p>
+      A function bind together with its lexical environment i.e Closure with its
+      lexical scope is bundled together.
+    </p>
+    <p>Function along with its lexical scope makes a Closure</p>
+
+
+
+    <script>
+        // let a = 10
+        // function outer() {
+        //     console.log(a);
+        //     let b = 20
+        //     function inner() {
+        //         console.log(b);
+        //     }
+        //     inner()
+        // }
+        // outer()
+
+
+
+
+          // When return inner function in outer function
+
+      // function outer() {
+      //     var a = 10;
+      //     function inner() {
+      //       console.log(a);
+      //     }
+      //     a = 100;
+      //     return inner;
+      //   }
+      //   let z = outer();
+
+      //   console.log(z);
+
+      //   z();
+
+      // if whole code was in another outer function . what happen then?
+
+      function outerOuter() {
+        var b = 200;
+        function outer() {
+          var a = 10;
+          function inner() {
+            console.log(a, b);
+          }
+          a = 100;
+          inner();
+        }
+        outer();
+      }
+      outerOuter();
+    </script>
+  </body>
+</html>
