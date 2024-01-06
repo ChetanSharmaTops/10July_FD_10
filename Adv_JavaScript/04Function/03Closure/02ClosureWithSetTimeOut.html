@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure With SetTimeOut</title>
+  </head>
+  <body>
+    <h1>Closure With SetTimeOut</h1>
+
+    <script>
+      function outer() {
+        console.log('Namaste Bharat');
+        for (var a = 0; a <= 5; a++) {
+        // for (let a = 0; a <= 5; a++) {
+            setTimeout(() => {
+                console.log(a);
+            }, a * 2000);
+        }
+      }
+      outer()
+    </script>
+  </body>
+</html>
