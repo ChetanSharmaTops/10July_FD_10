@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Higher Order Function</title>
+  </head>
+  <body>
+    <h1>Higher Order Function</h1>
+    <p>
+      Higher order functions are functions that take one or more functions as
+      arguments, or return a function as their result.
+    </p>
+
+    <script>
+      // function a() {           // Call back
+      //     console.log('Namaste Bharat');
+      // }
+      // function b(a) {     // Higher order Function
+      //     a(b)
+
+      // }
+      // b(a)
+
+      const radius = [2, 4, 6, 8];
+      console.log(radius);
+
+      //   Area of Circle
+
+      const calculateArea = function (radius) {
+        // console.log(radius);
+        const output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(Math.PI * radius[i] * radius[i]);
+        }
+        return output;
+      };
+
+      console.log(calculateArea(radius));
+
+      //   Circumference of Circle
+
+      //   const calculateCircumference = function (radius) {
+      //     const output = [];
+      //     for (let i = 0; i < radius.length; i++) {
+      //       output.push(2 * Math.PI * radius[i]);
+      //     }
+      //     return output;
+      //   };
+
+      //   console.log(calculateCircumference(radius));
+
+      //   Diameter of Circle
+
+      //   const calculateDiameter = function (radius) {
+      //     const output = [];
+      //     for (let i = 0; i < radius.length; i++) {
+      //       output.push(2 * radius[i]);
+      //     }
+      //     return output;
+      //   };
+
+      //   console.log(calculateDiameter(radius));
+
+      //   Above all done by Normal Person or coder
+
+      // Now we are entering in the Coding universe
+
+      // let's pray for those normal person
+
+      const calculate = function (radius, logic) {
+        const output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(logic(radius[i]));
+        }
+        return output;
+      };
+
+      const area = function (radius) {
+        return Math.PI * radius * radius;
+      };
+      const circumference = function (radius) {
+        return 2 * Math.PI * radius;
+      };
+      const diameter = function (radius) {
+        return 2 * radius;
+      };
+
+      console.log(calculate(radius, area));
+      console.log(calculate(radius, circumference));
+      console.log(calculate(radius, diameter));
+
+      //   Code Reusable
+      //   Readable
+      //   modularity
+      //   Scalable
+    </script>
+  </body>
+</html>
