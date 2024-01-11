@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter in JS</title>
+</head>
+<body>
+    <h1>Filter In JS</h1>
+
+
+    <script>
+
+        // Odd number 
+
+
+        const arr = [1,2,4,6,3,8]
+
+        function oddNumber(a) {
+            return a % 2
+        }
+        function evenNumber(a) {
+            return a % 2 ===0
+        }
+        function greaterNumber(a) {
+            return a > 4
+        }
+        
+
+        const outputOdd = arr.filter(oddNumber)
+        const outputEven = arr.filter(evenNumber)
+        const outputGreater = arr.filter(greaterNumber)
+        console.log(outputOdd);
+        console.log(outputEven);
+        console.log(outputGreater);
+
+
+
+      // We can pass in function like this also i.e Higher Order Function
+
+
+
+        //  const output = arr.filter(function oddNumber(a) {
+        //   return a % 2;
+        // });
+
+
+        // Arrow Function
+
+
+        // const output = arr.filter((a) => {
+        //   return a % 2;
+        // });
+
+
+        const output = arr.filter((a) => a % 2);
+
+        console.log(output);
+    </script>
+</body>
+</html>

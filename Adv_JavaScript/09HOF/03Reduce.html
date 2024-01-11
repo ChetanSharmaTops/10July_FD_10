@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce In JS</title>
+  </head>
+  <body>
+    <h1>Reduce in JS</h1>
+
+    <p>
+      The reduce() method of Array instances executes a user-supplied "reducer"
+      callback function on each element of the array, in order, passing in the
+      return value from the calculation on the preceding element. The final
+      result of running the reducer across all elements of the array is a single
+      value.
+    </p>
+
+    <script>
+      // Find  in an array
+
+      const arr = [1, 2, 3, 4, 5, 9, 6, 7, 8];
+
+      function sumOfNumber() {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          sum = sum + arr[i];
+          //   sum = 0 + 1 = 1
+          //   sum = 1 + 2 = 3
+          //   sum = 3 + 3 = 6
+          //   sum = 6 + 4 = 10
+          //   sum = 10 + 5 = 15
+          //   sum = 15 + 6 = 21
+          //   sum = 21 + 7 = 28
+          //   sum = 28 + 8 = 36
+          //   sum = 36 + 9 = 45
+        }
+        return sum;
+      }
+
+      const outputSum = arr.reduce(sumOfNumber);
+      console.log(outputSum);
+      // console.log(sumOfNumber(arr));
+
+      // acc = Accumulator
+
+      // The value resulting from the previous call to callbackFn. On the first call,
+      // its value is initialValue if the latter is specified; otherwise its value is array[0].
+
+      // curr = current value
+
+      // The value of the current element. On the first call,
+      // its value is array[0] if initialValue is specified; otherwise its value is array[1].
+
+      const sumInitial = arr.reduce((acc, curr) => {
+        return acc + curr;
+      }, 0);
+
+      console.log(sumInitial);
+
+      // Find Out Maximum Number
+
+      function maxNumber() {
+        let max = 0;
+        for (let i = 0; i < arr.length; i++) {
+          if (max < arr[i]) {
+            max = arr[i];
+          }
+        }
+        return max;
+      }
+
+      const outputMax = arr.reduce(maxNumber);
+      console.log(outputMax);
+
+      // acc = Accumulator
+
+      // The value resulting from the previous call to callbackFn. On the first call,
+      // its value is initialValue if the latter is specified; otherwise its value is array[0].
+
+      // curr = current value
+
+      // The value of the current element. On the first call,
+      // its value is array[0] if initialValue is specified; otherwise its value is array[1].
+
+
+
+      // acc = max 
+
+      
+      const output = arr.reduce((max, curr) => {
+        if (max < curr) {
+          max = curr;
+        }
+        return max;
+      }, 0);
+
+      console.log(output);
+    </script>
+  </body>
+</html>

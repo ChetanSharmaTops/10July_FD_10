@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map In JS</title>
+  </head>
+  <body>
+    <h1>Map In JS</h1>
+    <p>
+      The map() method of Array instances creates a new array populated with the
+      results of calling a provided function on every element in the calling
+      array.
+    </p>
+
+    <script>
+      // Normal way of writting code
+
+      // Double the values in an array
+
+      const arr = [1, 2, 3, 4, 5];
+      console.log(arr);
+
+      function doubleValue(a) {
+        return a * 2;
+      }
+      function TripleValue(a) {
+        return a * 3;
+      }
+      function BinaryValue(a) {
+        return a.toString(2);
+      }
+
+      const outputDouble = arr.map(doubleValue);
+      const outputTriple = arr.map(TripleValue);
+      const outputBinary = arr.map(BinaryValue);
+      console.log(outputDouble);
+      console.log(outputTriple);
+      console.log(outputBinary);
+
+      // We can pass in function like this also i.e Higher Order Function
+
+      //   const output = arr.map(function doubleValue(a) {
+      //     return a * 2;
+      //   });
+
+      //   In Arrow Function
+
+      // const output = arr.map((a) => {
+      //   return a * 2;
+      // });
+
+
+
+      // we can also write  like  this 
+
+
+      const output = arr.map((a) => a * 2);
+
+      console.log(output);
+
+
+
+
+
+    </script>
+  </body>
+</html>
