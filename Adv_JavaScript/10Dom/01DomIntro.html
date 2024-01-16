@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom IntroDuction</title>
+    <style>
+      input:checked + p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="same" id="unique">Namaste DOM</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <input type="text" id="inp" />
+
+    <button onclick="handleData()">Add</button>
+    <div id="box"></div>
+
+    <input type="checkbox" />
+    <p>Lorem ipsum dolor sit amet.</p>
+    <hr />
+    <hr />
+
+    <script>
+      //   function handleData() {
+      //     let inpData = document.getElementById("inp");
+      //     let a = document.createElement("p");
+      //     let aNode = document.createTextNode(inpData.value);
+      //     a.appendChild(aNode);
+      //     document.getElementById("box").appendChild(a);
+
+      //     if (inpData.value != '') {
+      //         inpData.value = "";
+      //     }
+      //   }
+
+      let arr = [1, 2, 3, 4, 5];
+
+      for (let i = 1; i <= arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+          let cube = arr[j] * arr[j] * arr[j];
+          let square = arr[j] * arr[j];
+          let hey = arr[j];
+
+          document.write(
+            `<tr> <td> ${hey} <td></tr>` +
+              `<tr> <td> ${i} <td></tr>` +
+              `<tr> <td> ${hey} <td></tr>` +
+              `<tr> <td> ${square} <td></tr>` +
+              `<tr> <td> ${cube} <td></tr>`
+          );
+          document.write("<br>");
+        }
+      }
+
+      //   for (let k = 0; k < arr.length; k++) {
+      //     document.write(arr[k]);
+      //   }
+      //   document.write("<br>");
+
+      //   for (let m = 0; m < arr.length; m++) {
+      //     document.write('1');
+      //   }
+      //   document.write("<br>");
+
+      //   for (let k = 0; k < arr.length; k++) {
+      //     document.write(arr[k]);
+      //   }
+      //   document.write("<br>");
+
+      //   for (let i = 0; i < arr.length; i++) {
+      //     document.write(arr[i] * arr[i] * arr[i]);
+      //     console.log(arr[i] * arr[i] * arr[i]);
+      //   }
+      //   document.write("<br>");
+
+      //   for (let j = 0; j < arr.length; j++) {
+      //     document.write(arr[j] * arr[j]);
+      //     console.log(arr[j] * arr[j]);
+      //   }
+      //   document.write("<br>");
+    </script>
+  </body>
+</html>
