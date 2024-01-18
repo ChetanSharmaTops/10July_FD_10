@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get HTML DATA</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        background-color: crimson;
+        color: aliceblue;
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        border: 2px solid lime;
+        text-align: center;
+      }
+      a{
+        color: aliceblue;
+        text-decoration: none;
+      }
+      #output,
+      h1,
+      p,
+      input,
+      button {
+        margin-top: 20px;
+      }
+      #output {
+        border: 3px dashed limegreen;
+        height: 100px;
+        background-color: brown;
+        color: khaki;
+      }
+    </style>
+  </head>
+  <body onclick="handleClick()">
+    <div class="box">
+      <h1 id="heading">Get HTML Data</h1>
+      <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, ex?
+      </p>
+      <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, ex?
+      </p>
+      <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, ex?
+      </p>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <input type="text" name="firstName" id="firstId" />
+      <input type="text" name="firstName" id="secondId" />
+      <input type="text" name="firstName" id="thirdId" />
+      <button>Click Me</button>
+      <div id="output"></div>
+    </div>
+
+    <script>
+    //   let a = document.getElementById("heading");
+    //   let b = document.getElementsByClassName("para");
+    //   let c = document.getElementsByName("firstName");
+    //   let d = document.querySelectorAll("Input");
+      // console.log(a);
+      // console.log(b);
+      // console.log(b[2]);
+      // console.log(c);
+      // console.log(c[1]);
+    //   console.log(d);
+      // b.forEach(element => {
+      //     console.log(element);
+      // });   // Html collection look like an array but it is not an array
+      // so, we can not use array methods on HTML Collection
+
+      // c.forEach(element => {
+      //     console.log(element);
+      // })
+      // we can use some array methods on Node List
+      // for (const iterator of d) {
+
+      //     console.log(d);
+      // }
+
+      // console.log(d[1]);
+
+      // console.log(typeof d[1]);
+
+
+    //   let f = d[0].getAttribute("id");
+    //   console.log(f);
+
+    //   let e = d[0].setAttribute("style", "color: red");
+    //   console.log(e);
+
+
+    //   function handleClick() {
+    //     let h = document.activeElement.tagName;
+    //     document.getElementById('output').innerHTML = h
+    //   }
+
+
+      let x = 10
+      let y = 10
+    //   let z = x
+    //   x= 5
+    console.log(x===y);
+    //   console.log(z);
+      console.log(x);
+
+    //   let a = {name: 1, address: 'hey', contact: 10}
+    //   let b = {name: 1, address: 'hey', contact: 10}
+    // let a = [1,2,3,4]
+    // let b = [5,6,7,8]
+    //   let b = a
+    //   a = [4,5]
+    //   console.log(b === a);
+    //   console.log(a);
+
+    //   function add(a, b){
+
+
+    //   }
+    //   add(1,2)
+    //   add(14,5)
+
+    </script>
+  </body>
+</html>
