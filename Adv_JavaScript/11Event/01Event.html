@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">Click Me</button>
+    <span class="heyspan">Lorem ipsum dolor sit amet.</span>
+    <span class="heyspan">Lorem ipsum dolor sit amet.</span>
+    <span class="heyspan">Lorem ipsum dolor sit amet.</span>
+    <span class="heyspan">Lorem ipsum dolor sit amet.</span>
+    <span class="heyspan">Lorem ipsum dolor sit amet.</span>
+    <span class="heyspan">Lorem ipsum dolor sit amet.</span>
+    <span class="heyspan">Lorem ipsum dolor sit amet.</span>
+
+    <!-- <button onclick="console.log('Namaste Bharat');">Click Me</button> -->
+    <!-- <button onclick="greet()" id="btn">Click Me</button> -->
+    <script>
+        // function greet() {
+        //     console.log("Namaste Bharat");
+        // }
+
+        let btnIs = document.getElementById('btn');
+        // btnIs.addEventListener('event', function () {}, false)
+        btnIs.addEventListener('click', function (a) {
+            console.log("Namaste Bharat");
+            console.log(a);
+        })
+
+        // const a = document.querySelectorAll(".heyspan")
+
+        // a.forEach(element => {
+        //     console.log(element);
+        // });
+        
+    </script>
+</body>
+</html>

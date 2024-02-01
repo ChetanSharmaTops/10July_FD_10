@@ -20,7 +20,7 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".Hide").click(function () {
+        $(".Hide").on('click',function () {
           $("h1").hide(2000);
         })
         $(".Show").click(function () {
