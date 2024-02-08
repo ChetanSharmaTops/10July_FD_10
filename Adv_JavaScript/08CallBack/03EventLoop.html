@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Loop in JavaScript</title>
+  </head>
+  <body>
+    <h1>Event Loop in JavaScript</h1>
+
+    <p>
+      The event loop in JavaScript allows it to behave asynchronously and carry
+      out non-blocking I/O operations even though it's a single-threaded
+      language. The event loop is responsible for executing code, collecting and
+      processing events, and carrying out queued sub-tasks
+    </p>
+<img src="../../Images/event-loop.png" width="100%" height="500px" alt="">
+    <script>
+      console.log("Good Morning");
+      console.log("Good Afternoon");
+      setTimeout(() => {
+        console.log("Namaste Bharat");
+      }, 2000);
+      console.log("Good Evening");
+      console.log("Good Night");
+    </script>
+  </body>
+</html>

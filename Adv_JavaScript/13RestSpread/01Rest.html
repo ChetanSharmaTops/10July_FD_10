@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function showName(firstName, lastName, ...titles) {
+        console.log(firstName);
+        console.log(lastName);
+        console.log(titles);
+        console.log(titles[0]);
+        console.log(titles[1]);
+        console.log(titles[2]);
+        console.log(titles[3]);
+      }
+
+      showName(
+        "Julius",
+        "Caesar",
+        "Consul",
+        "Imperator",
+        "ravi",
+        "Jignasha",
+        "Khyati",
+        "Sachin"
+      );
+
+      let arr = [3, 5, 1];
+
+      alert(Math.max(...arr)); // NaN
+    </script>
+  </body>
+</html>

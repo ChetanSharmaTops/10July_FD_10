@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback Hell</title>
+  </head>
+  <body>
+    <h1>CallBack</h1>
+    <p>
+      Callback hell is a phenomenon where a Callback is called inside another
+      Callback. It is the nesting of multiple Callbacks inside a function. If
+      you look at the design of the code, it seems just like a pyramid. Thus the
+      Callback hell is also referred to as the 'Pyramid of Doom'
+    </p>
+    <script>
+      api.product(function () {
+        api.cart(function () {
+          api.payment(function () {
+            api.booked(function () {});
+          });
+        });
+      });
+
+      //   This is how it makes pyramid of Doom i.e Callback Hell
+    </script>
+  </body>
+</html>
